@@ -1,0 +1,48 @@
+# ==========================================
+# SupplySync B2B - Git Ignore Configuration
+# ==========================================
+
+# Dependencies
+node_modules/
+*/node_modules/
+package-lock.json.backup
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.env
+
+# SQLite local databases & locks (retain seed schema in code)
+backend/data/*.sqlite
+backend/data/*.sqlite-journal
+
+# Compiled & Bundled Outputs
+dist/
+build/
+*/dist/
+*/build/
+
+# Logs & Temporary Debug Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# System & IDE Artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ==========================================
+# Explicitly Kept Files (Audit Requirements)
+# DO NOT IGNORE these essential artifacts
+# ==========================================
+!AGENTS.md
+!docs/
+!docs/**
+!docs/artifacts/
+!docs/artifacts/**
+!docs/artifacts/screenshots/
+!docs/artifacts/screenshots/**
